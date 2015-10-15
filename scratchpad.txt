@@ -1,0 +1,22 @@
+var score = function () {
+// increases on correct keypress
+};
+
+var Player = function () {
+this.name = name;
+this.score = score;
+this.hp = hp;
+};
+
+Player.prototype.newPlayer = function(name) {
+// prompt player for name;
+// this.name = name;
+}
+
+// keep track of keypress
+
+// deduct hp on word timeout
+
+// create word list
+
+// special words that increase hp
