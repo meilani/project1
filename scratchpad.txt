@@ -9,14 +9,66 @@ this.hp = hp;
 };
 
 Player.prototype.newPlayer = function(name) {
-// prompt player for name;
 // this.name = name;
 }
 
-// keep track of keypress
+var player1 = new Player;
 
-// deduct hp on word timeout
+
+// keep track of keypress:
+  if keypress sequence matches enemy object, enemy object is removed from screen and score is increased.
+  keydown(), keycode, ---- if keydown (event.which works in firefox)
+  document.addEventListener("keydown", fn, false);
+
+  document.addEventListener("keydown", keydownCheck, false);
+
+  var keydownCheck = function(e) {
+    var keyCheck = e.keyCode;
+    if (keyCheck == correctKey) {
+    someEnemy.hp = 0;
+    newPlayer.score += 10;
+    } else if (keyCheck != correctKey) {
+    newPlayer.score -= 5;
+    }
+  };
+
+// deduct hp on word timeout, enemy object disappears when hp is deducted
+
+// timeout occurs when enemy object reached player object
 
 // create word list
 
+// words move with enemy animation
+
 // special words that increase hp
+document.addEventListener("keydown", keydownCheck, false);
+
+var keypressCheck = function (e) {
+  console.log('pressed');
+  var keyUsed = String.fromCharCode(e.which);
+  if (keyUsed == "F") {
+    console.log("correct key pressed");
+    player1.score += 10;
+    enemy1.hp -= 10;
+    //need to clear input box field
+    console.log(player1);
+    console.log(enemy1);
+  } else if (keyUsed != "F") {
+    console.log("wrong key");
+    player1.hp -= 5;
+    // need to clear input box field
+    console.log(player1);
+  }
+};
+
+// enemies and words move together on screen
+
+// word movement synced with timeout
+
+// css
+
+// find images
+ http://opengameart.org/content/night-forest-background
+ http://opengameart.org/content/fantasy-background
+ http://opengameart.org/content/seamless-cave-background
+ http://opengameart.org/content/skeleton-animations
