@@ -66,7 +66,8 @@ var keypressCheck = function (e) {
 // word movement synced with timeout
 
 // css
-
+// make escaped enemy counter
+// sprite walking animaton
 // find images
  http://opengameart.org/content/night-forest-background
  http://opengameart.org/content/fantasy-background
