@@ -46,6 +46,10 @@ header ul li {
   position: absolute;
   top: 75px;
   right: 400px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-size: 25px;
 }
 
 #endText {

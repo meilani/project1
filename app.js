@@ -17,7 +17,7 @@ Player.prototype.newPlayer = function() {
 
 var player1 = new Player();
 //player1.newPlayer();
-var wordList = ["DAD", "FALL", "LASS", "HALL", "GEAR", "READY", "QUICK", "POPPED", "TOPAZ", "QUIPPED", "ZOOLOGY", "POX", "CIRCUMFLEX", "CONQUEROR", "QUIXOTICALLY", "EXQUISITENESSES", "VENTRILOQUIZING", "TRANQUILLIZERS", "QUANTIZATON", "LIQUIDIZED"];
+var wordList = ["DAD", "FALL", "LASS", "HALL", "GEAR", "SLEEP", "BARBER", "APPLE", "READY", "QUICK", "BILLED", "POPPED", "TOPAZ", "QUIPPED", "ZOOLOGY", "POX", "CIRCUMFLEX", "CONQUEROR", "QUIXOTICALLY", "EXQUISITENESSES", "VENTRILOQUIZING", "TRANQUILLIZERS", "QUANTIZATON", "LIQUIDIZED"];
 
 
 var Enemy = function () {
@@ -35,7 +35,7 @@ Enemy.prototype.splitWord = function () {
   enemyEscaped = false;
 };
 
-var wordSpeed = 8000;
+var wordSpeed = 10000;
 
 var wordTiming = function () {
   var timing = prompt("Choose speed by entering fast, normal, or slow");
@@ -47,7 +47,7 @@ var wordTiming = function () {
   } else if (timing == "slow") {
     wordSpeed = 12000;
   } else {
-    wordSpeed = 8000;
+    wordSpeed = 10000;
   }
 }
 
@@ -69,7 +69,7 @@ var newWord = function(listOfWords) {
     duration: wordSpeed,
     complete: function(){
       enemyEscaped = true;
-      player1.hp -= 5;
+      player1.hp -= 10;
       enemy1.escaped += 1;
       $("#enemy").css({"right": "0px"});
       $("#entry").val("");
